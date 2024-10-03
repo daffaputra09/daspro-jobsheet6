@@ -6,15 +6,19 @@ public class Pemilihan2Percobaan106 {
         int tahun;
         System.out.print("Masukkan tahun: ");
         tahun = input06.nextInt();
+
         if ((tahun % 4) == 0) {
-            if ((tahun % 100) != 0) {
+            if ((tahun % 100) == 0) {
+                if ((tahun % 400) == 0) {
+                    System.out.println("Tahun Kabisat");
+                } else {
+                    System.out.println("Bukan Tahun Kabisat");
+                }
+            } else {
                 System.out.println("Tahun Kabisat");
             }
-            else  System.out.println("Bukan Tahun Kabisat");
-        } 
-        else {
+        } else {
             System.out.println("Bukan Tahun Kabisat");
         }
-        
     }
 }
